@@ -16,6 +16,11 @@ const STEPS = [
   'cut the chicken, slice the onion, and cut the potato and carrot into chunks.',
   'heat oil in a pot over medium heat. add the onion and cook slowly until soft and lightly golden.',
   'add garlic and cook until fragrant. add the chicken and cook until the outside is no longer pink.',
+  'add the potato and carrot, then pour in the stock until everything is just covered.',
+  'simmer uncovered for about 15-20 minutes, until the vegetables are tender.',
+  'turn off the heat. break the curry roux into pieces and stir until fully dissolved.',
+  'turn the heat back on low and simmer for 5-10 minutes, stirring occasionally, until thick.',
+  'add salt and pepper. turn off the heat and let it rest for a few minutes before serving.',
 ]
 
 function toFractionString(value) {
@@ -87,7 +92,7 @@ function RecipeViewSheet({ open, onClose }) {
           <div className="recipe-view-sheet__instructions">
             {STEPS.map((step, index) => (
               <div key={step} className="recipe-view-sheet__step">
-                <p className="recipe-view-sheet__step-number">{index + 1}.</p>
+                <span className="recipe-view-sheet__step-number">{index + 1}.</span>
                 <p>{step}</p>
               </div>
             ))}
