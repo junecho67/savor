@@ -1,0 +1,40 @@
+/* App.css */
+
+/* Basic reset */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f6f4f2; /* outside of the phone frame */
+}
+
+/* Phone frame */
+.app {
+  width: 402px;          /* match Figma frame */
+  min-height: 874px;     /* match Figma frame */
+  margin: 0 auto;
+  background: #ffffff;
+  padding-bottom: 86px;  /* reserve space for bottom nav (match Figma nav height) */
+}
+
+/* Header (top area) */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  padding: 18px 14px;    /* start here; adjust to match Figma */
+  border-bottom: 1px solid var(--color-border-line);
+}
+
+/* Main content */
+.app-main {
+  padding: 6px 16px 16px; /* typical Figma content padding */
+}
+
+.app-main--profile {
+  padding: 0;
+}
+
+.app {
+  position: relative; /* IMPORTANT: anchors overlay children */
+}

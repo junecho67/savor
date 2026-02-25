@@ -1,0 +1,267 @@
+.profile-page {
+  margin: -6px -16px -16px;
+  background: #fff;
+  padding-bottom: 96px;
+}
+
+.profile-page__status {
+  padding: 18px 32px 8px;
+  font-size: 17px;
+  font-family: 'Inter', var(--font-sans);
+  font-weight: 600;
+  color: #1b1b28;
+}
+
+.profile-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.profile-page__header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Public Sans', var(--font-sans);
+  color: var(--color-text);
+}
+
+.profile-page__header-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-page__header-icons button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.profile-page__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px 24px;
+}
+
+.profile-page__hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-page__username {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Public Sans', var(--font-sans);
+  font-weight: 700;
+  color: #000;
+}
+
+.profile-page__hero-actions {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.profile-page__hero-actions button {
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Plus Jakarta Sans', var(--font-sans);
+  font-weight: 600;
+}
+
+.profile-page__hero-actions button:not(.profile-page__arrow-btn) {
+  width: 145px;
+}
+
+.profile-page__arrow-btn {
+  width: 44px;
+}
+
+.profile-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.profile-page__section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.profile-page__section-title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Public Sans', var(--font-sans);
+  font-weight: 600;
+  color: #40392b;
+}
+
+.profile-page__section-title button {
+  border: none;
+  background: transparent;
+  color: #6a8a4c;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.profile-page__family-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-page__family-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-page__family-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-page__family-list span {
+  font-size: 16px;
+  font-family: 'Public Sans', var(--font-sans);
+  font-weight: 600;
+  color: #40392b;
+}
+
+.profile-page__saved-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.profile-page__saved-card {
+  min-width: 173px;
+  width: 173px;
+  height: 101px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.profile-page__saved-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-page__recipes-made {
+  margin-top: 6px;
+}
+
+.profile-page__tabs {
+  display: flex;
+  gap: 12px;
+  padding: 0 16px;
+  margin: 8px 0 14px;
+}
+
+.profile-page__tab {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  color: var(--color-primary);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.profile-page__tab--active {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.profile-page__posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-page__post {
+  border-bottom: 1px solid var(--color-border-line);
+  padding: 8px 0 12px;
+}
+
+.profile-page__post-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+}
+
+.profile-page__post-meta img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-page__post-person {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #44352b;
+}
+
+.profile-page__post-time {
+  margin: 0;
+  font-size: 10px;
+  color: #7e766b;
+}
+
+.profile-page__post-images {
+  margin-top: 8px;
+  padding: 0 8px;
+}
+
+.profile-page__post-images img {
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.profile-page__post-images--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.profile-page__post-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  padding: 0 10px;
+  color: #40392b;
+  font-size: 14px;
+}
+
+.profile-page__post-actions button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  padding: 0;
+}

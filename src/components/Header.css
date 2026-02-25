@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.header-logo-text {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-regular);
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.header-logo-leaf {
+  display: flex;
+  align-items: center;
+  color: #6B8E23;
+}
+
+.header-notifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.header-notifications:hover {
+  opacity: 0.85;
+}

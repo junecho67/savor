@@ -1,0 +1,103 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 402px;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border-line);
+  height: 86px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 20;
+}
+
+.bottom-nav-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.bottom-nav-list-item {
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 40px;
+  gap: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--color-icons);
+  transition: color 0.15s ease;
+}
+
+.bottom-nav-item--active {
+  color: var(--color-primary);
+}
+
+.bottom-nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.bottom-nav-icon-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.bottom-nav-icon-image--add {
+  width: 24px;
+  height: 24px;
+}
+
+.bottom-nav-profile-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 34.2px;
+  object-fit: cover;
+}
+
+.bottom-nav-label {
+  font-family: 'Outfit', var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.bottom-nav-gesture {
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.bottom-nav-gesture-pill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+  width: 120px;
+  height: 4px;
+  border-radius: 360px;
+  background: rgba(126, 89, 37, 0.09);
+}
