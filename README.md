@@ -1,37 +1,22 @@
-# Savor Landing
+# Savor: AI-Enabled Workflow Prototype
+**Bridging Generational Gaps via System-Level Design**
 
-React implementation of the Savor app design from [Figma (Designs - Savor, node 206-12626)](https://www.figma.com/design/7Ofvgv0XWWZykY1RsCWn1r/Designs---Savor?node-id=206-12626).
+This is a functional **React prototype** developed to pressure-test the interaction logic and system-level behaviors of *Savor*, an intergenerational recipe-sharing app originally designed during the **Rice Design-a-thon 2026**.
 
-## Design system
+## 🚀 Goals
+The goal of this technical iteration was to move beyond static Figma mockups and explore **AI-enabled workflows**. Using an AI-native development environment allowed me to identify and resolve **experience quality gaps** in the "AI-human handoff" within the app's core flows.
 
-Design tokens live in **`design-system.json`** so future screens stay consistent with Figma. It includes:
+## 🛠 Tech Tools
+* **Framework:** React + Tailwind CSS
+* **Editor:** [Cursor](https://cursor.sh/) (AI-Native IDE)
+* **Design-to-Code Context:** Figma MCP (Model Context Protocol)
 
-- **Colors** — Text, primary (Orange), icons, borders (from Figma variables)
-- **Typography** — Font families (DM Sans, DM Serif Display), sizes, weights
-- **Spacing** — 0–120px scale
-- **Border radius** — sm, md, lg, xl, 2xl, full
-- **Component rules** — Search bar, buttons, cards, avatar, nav
+## 🧠 What I Validated...
+- Refine Motion Choreography: Validated high-fidelity transitions, such as contextual slide-up features, to ensure navigation feels intentional and smooth for users
+- Prototype System-Integrated Workflows: Simulated the logic of native device permissions, such as connecting to a photo library, to assess the friction of the "create post" user journey.
+- Validate Input Feedback Loops: Implemented real-time typing states and input interactions to test the responsiveness and clarity of the interface
+- Bridge the Design-to-Code Gap: Leveraged Cursor and Figma MCP to assess the technical feasibility of these interactive patterns, identifying where systematic adjustments were needed for a cleaner engineering handoff.
 
-CSS variables in `src/index.css` are derived from this file.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open [http://localhost:5173](http://localhost:5173).
-
-## Build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Stack
-
-- React 18
-- Vite 6
-- Plain CSS (design tokens in `design-system.json` + `:root` in `index.css`)
+---
+**June Cho** *Tufts University | B.S. Engineering Psychology (HCI) & B.F.A. Graphic Design*  
+*Expected Graduation: May 2026*
