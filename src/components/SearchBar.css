@@ -1,24 +1,29 @@
 .search-bar {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-4);
-  background: var(--color-bg-secondary);
-  border-radius: var(--radius-2xl);
+  gap: 8px;
+  height: 36px;
+  margin: 0 16px;
+  padding: 10.5px 13px;
+  background: rgba(194, 150, 107, 0.09);
+  border-radius: 360px;
   border: 1px solid transparent;
 }
 
 .search-bar:focus-within {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+  outline: none;
 }
 
 .search-bar-icon {
   flex-shrink: 0;
-  color: var(--color-icons);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-bar-icon img {
+  width: 20px;
+  height: 20px;
 }
 
 .search-bar-input {
@@ -27,12 +32,13 @@
   padding: 0;
   border: none;
   background: transparent;
-  font-size: var(--text-base);
-  color: var(--color-text);
+  font-size: 14px;
+  color: #2e2514;
+  line-height: 1.35;
 }
 
 .search-bar-input::placeholder {
-  color: var(--color-text-muted);
+  color: rgba(46, 37, 20, 0.5);
 }
 
 .search-bar-input:focus {
@@ -47,7 +53,11 @@
   padding: 0;
   border: none;
   background: transparent;
-  color: var(--color-primary);
+}
+
+.search-bar-mic img {
+  width: 18px;
+  height: 18px;
 }
 
 .search-bar-mic:hover {

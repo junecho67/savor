@@ -1,6 +1,6 @@
 import './ChallengeSection.css'
 
-const CHALLENGE_IMAGE = 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80'
+const CHALLENGE_IMAGE = 'http://localhost:3845/assets/fa977299ccebc5d764d99b8582cfc00a01f427cb.png'
 
 function ChallengeSection() {
   return (

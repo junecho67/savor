@@ -1,21 +1,22 @@
 .challenge-section {
-  margin-bottom: var(--space-6);
+  margin-bottom: 36px;
+  padding: 0 16px;
 }
 
 .challenge-title {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-bold);
+  font-size: 16px;
+  font-weight: 600;
   color: var(--color-text);
-  margin: 0 0 var(--space-2);
-  line-height: var(--space-6);
+  margin: 0 0 4px;
+  line-height: normal;
 }
 
 .challenge-description {
-  font-size: var(--text-base);
+  font-size: 12px;
   font-weight: var(--weight-regular);
-  color: var(--color-text);
-  margin: 0 0 var(--space-4);
-  line-height: 1.5;
+  color: rgba(46, 37, 20, 0.5);
+  margin: 0 0 24px;
+  line-height: 1.35;
 }
 
 .challenge-card {
@@ -27,7 +28,7 @@
 .challenge-card-image-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 192px;
   overflow: hidden;
 }
 
@@ -41,22 +42,24 @@
 .challenge-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 50%);
+  background: rgba(0, 0, 0, 0.28);
   pointer-events: none;
 }
 
 .challenge-cta {
   position: absolute;
-  right: var(--space-4);
-  bottom: var(--space-4);
-  padding: var(--space-2) var(--space-5);
-  font-size: var(--text-md);
+  right: 17px;
+  bottom: 18px;
+  width: 145px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: 14px;
   font-weight: var(--weight-semibold);
   color: var(--color-white);
   background: var(--color-primary);
   border: none;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: none;
 }
 
 .challenge-cta:hover {

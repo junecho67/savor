@@ -22,13 +22,13 @@ body {
   top: 0;
   z-index: 10;
   background: #ffffff;
-  padding: 18px 14px;    /* start here; adjust to match Figma */
-  border-bottom: 1px solid var(--color-border-line);
+  padding: 0;
+  border-bottom: none;
 }
 
 /* Main content */
 .app-main {
-  padding: 6px 16px 16px; /* typical Figma content padding */
+  padding: 16px 16px 16px;
 }
 
 .app-main--profile {
