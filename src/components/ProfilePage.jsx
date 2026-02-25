@@ -1,27 +1,32 @@
+import { useState } from 'react'
 import './ProfilePage.css'
 
-const imgStatus = '/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
-const imgShare = '/assets/c4a628b79e6cc3f5ab5479300f51021d8fdd776d.svg'
-const imgSettings = '/assets/55499c7e3e87acf5489b84c357c6434beb8570f3.svg'
-const imgArrowDown = '/assets/278e3875f5aba6039bc333a171f6be97da01e5dd.svg'
-const imgPlus = '/assets/009c474ed4faa12063d94320754fccbf5eb93f4d.svg'
-const imgBranch = '/assets/bca50743e960708810e3bbfafc580ee3181f5c27.svg'
-const imgChat = '/assets/b5f1ef92e6c9345b8327cf72f77557bdf21a5965.svg'
-const imgBookmark = '/assets/6706e034eb4cd22bf16fc919ef81e69d672589c5.svg'
+const imgStatus = 'http://localhost:3845/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
+const imgShare = 'http://localhost:3845/assets/c4a628b79e6cc3f5ab5479300f51021d8fdd776d.svg'
+const imgSettings = 'http://localhost:3845/assets/55499c7e3e87acf5489b84c357c6434beb8570f3.svg'
+const imgArrowDown = 'http://localhost:3845/assets/278e3875f5aba6039bc333a171f6be97da01e5dd.svg'
+const imgPlus = 'http://localhost:3845/assets/009c474ed4faa12063d94320754fccbf5eb93f4d.svg'
+const imgBranch = 'http://localhost:3845/assets/bca50743e960708810e3bbfafc580ee3181f5c27.svg'
+const imgChat = 'http://localhost:3845/assets/b5f1ef92e6c9345b8327cf72f77557bdf21a5965.svg'
+const imgBookmark = 'http://localhost:3845/assets/6706e034eb4cd22bf16fc919ef81e69d672589c5.svg'
 
-const imgTopProfile = '/assets/9bf4d2684383732136e64955c3a44ff54bcea562.png'
-const imgGrandma = '/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png'
-const imgMom = '/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png'
-const imgDad = '/assets/baa1cbcbe2250c59af27a3ee93eec66927ac19e8.png'
-const imgCousin = '/assets/ccfa7cb9160116512a83c2308aa9c3ee27295503.png'
+const imgTopProfile = 'http://localhost:3845/assets/9bf4d2684383732136e64955c3a44ff54bcea562.png'
+const imgGrandma = 'http://localhost:3845/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png'
+const imgMom = 'http://localhost:3845/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png'
+const imgDad = 'http://localhost:3845/assets/baa1cbcbe2250c59af27a3ee93eec66927ac19e8.png'
+const imgCousin = 'http://localhost:3845/assets/ccfa7cb9160116512a83c2308aa9c3ee27295503.png'
 
-const imgSavedRibs = '/assets/b2d70ff0d7647565bf13f21613ff867f80284033.png'
-const imgSavedPasta = '/assets/486bad1476f9620964c6dd04bdf3bbc2d4a65863.png'
+const imgSavedRibs = 'http://localhost:3845/assets/b2d70ff0d7647565bf13f21613ff867f80284033.png'
+const imgSavedPasta = 'http://localhost:3845/assets/486bad1476f9620964c6dd04bdf3bbc2d4a65863.png'
 
-const imgPost1 = '/assets/8a3c69e9511f3c3c8451cf97e00c02fb2436fb5b.png'
-const imgPost2A = '/assets/9593145b9752fe3eda37994b0fd256c23baab042.png'
-const imgPost2B = '/assets/17c2d2f8c4d3e47984e88f52f63ca5c35e9daa9c.png'
-const imgPost3 = '/assets/457fe52981ed5f6eddb3cbf9d060444e0b172849.png'
+const imgPost1 = 'http://localhost:3845/assets/8a3c69e9511f3c3c8451cf97e00c02fb2436fb5b.png'
+const imgPost2A = 'http://localhost:3845/assets/9593145b9752fe3eda37994b0fd256c23baab042.png'
+const imgPost2B = 'http://localhost:3845/assets/17c2d2f8c4d3e47984e88f52f63ca5c35e9daa9c.png'
+const imgPost3 = 'http://localhost:3845/assets/457fe52981ed5f6eddb3cbf9d060444e0b172849.png'
+const imgOtherMom = 'http://localhost:3845/assets/fcfee7940207fc0fe2d7d4d7c0a8775e47a35372.png'
+const imgOtherDad = 'http://localhost:3845/assets/90beebc9d6446f106c451a34945fe90648591eb3.png'
+const imgOtherPost1 = 'http://localhost:3845/assets/8a3c69e9511f3c3c8451cf97e00c02fb2436fb5b.png'
+const imgOtherPost2 = 'http://localhost:3845/assets/17d2c0bfb1d34f6ed83f0868e816b33958799cfc.png'
 
 const FAMILY_MEMBERS = [
   { name: 'Grandma', avatar: imgGrandma },
@@ -36,13 +41,21 @@ const SAVED_RECIPES = [
   { image: imgSavedPasta, title: 'Tomato Pasta', subtitle: "Sarah from Smith's" },
 ]
 
-const RECIPES_MADE = [
+const FAMILY_RECIPES = [
   { person: 'Grandma', avatar: imgGrandma, time: '1 day ago', likes: 6, comments: 3, images: [imgPost1] },
   { person: 'Mom', avatar: imgMom, time: '2 days ago', likes: 2, comments: 1, images: [imgPost2A, imgPost2B] },
   { person: 'Dad', avatar: imgDad, time: '2 days ago', likes: 10, comments: 2, images: [imgPost3] },
 ]
 
+const OTHER_RECIPES = [
+  { person: 'Mom from Jang Family', avatar: imgOtherMom, time: '1 day ago', likes: 9, comments: 2, images: [imgOtherPost1] },
+  { person: 'Dad from Jang Family', avatar: imgOtherDad, time: '1 day ago', likes: 1, comments: 0, images: [imgOtherPost2] },
+]
+
 function ProfilePage() {
+  const [activeRecipesTab, setActiveRecipesTab] = useState('family')
+  const recipes = activeRecipesTab === 'family' ? FAMILY_RECIPES : OTHER_RECIPES
+
   return (
     <section className="profile-page" aria-label="Profile page">
       <div className="profile-page__status">
@@ -113,12 +126,24 @@ function ProfilePage() {
           <h2>Recipes Made</h2>
         </div>
         <div className="profile-page__tabs">
-          <button type="button" className="profile-page__tab profile-page__tab--active">Family</button>
-          <button type="button" className="profile-page__tab">Others</button>
+          <button
+            type="button"
+            className={`profile-page__tab ${activeRecipesTab === 'family' ? 'profile-page__tab--active' : ''}`}
+            onClick={() => setActiveRecipesTab('family')}
+          >
+            Family
+          </button>
+          <button
+            type="button"
+            className={`profile-page__tab ${activeRecipesTab === 'others' ? 'profile-page__tab--active' : ''}`}
+            onClick={() => setActiveRecipesTab('others')}
+          >
+            Others
+          </button>
         </div>
 
         <div className="profile-page__posts">
-          {RECIPES_MADE.map((post) => (
+          {recipes.map((post) => (
             <article key={`${post.person}-${post.time}`} className="profile-page__post">
               <div className="profile-page__post-meta">
                 <img src={post.avatar} alt="" />

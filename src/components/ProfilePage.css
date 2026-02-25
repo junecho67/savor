@@ -3,7 +3,7 @@
   background: #fff;
   width: 402px;
   min-height: 788px;
-  padding-bottom: 96px;
+  padding-bottom: 120px;
 }
 
 .profile-page__status {
@@ -251,6 +251,8 @@
   padding: 0 20px;
   height: 32px;
   border-radius: 999px;
+  line-height: 1.35;
+  cursor: pointer;
 }
 
 .profile-page__tab--active {
@@ -265,8 +267,10 @@
 
 .profile-page__post {
   border-bottom: 1px solid var(--color-border-line);
-  padding: 0 0 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .profile-page__post-meta {
@@ -299,7 +303,7 @@
 }
 
 .profile-page__post-images {
-  margin-top: 20px;
+  margin-top: 0;
   padding: 0 20px;
   display: flex;
   gap: 20px;
@@ -316,13 +320,14 @@
 
 .profile-page__post-images--grid {
   display: flex;
+  overflow-x: auto;
 }
 
 .profile-page__post-actions {
   display: flex;
   align-items: center;
   gap: 17px;
-  margin-top: 20px;
+  margin-top: 0;
   padding: 0 20px;
   color: #28231b;
   font-size: 15px;
