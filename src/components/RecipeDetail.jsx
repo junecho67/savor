@@ -70,11 +70,11 @@ function RecipeDetail({ onBack, onOpenGrowLeaf, onOpenRecipe }) {
       </div>
       <div className="recipe-detail__topbar">
         <button type="button" className="recipe-detail__icon-btn" aria-label="Go back" onClick={onBack}>
-          <img src={BACK_ICON} alt="" />
+          <img src={BACK_ICON} alt="" className="recipe-detail__icon-back" />
         </button>
         <h1>Recipe Origin</h1>
         <button type="button" className="recipe-detail__icon-btn" aria-label="Share recipe">
-          <img src={SHARE_ICON} alt="" />
+          <img src={SHARE_ICON} alt="" className="recipe-detail__icon-share" />
         </button>
       </div>
       <article className="recipe-detail__main-post">

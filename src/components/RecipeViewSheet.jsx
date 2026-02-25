@@ -56,11 +56,10 @@ function RecipeViewSheet({ open, onClose }) {
     [multiplier],
   )
 
-  if (!open) return null
   return (
-    <div className="recipe-view-sheet" aria-hidden={!open}>
-      <button type="button" className="recipe-view-sheet__backdrop" onClick={onClose} />
-      <section className="recipe-view-sheet__panel" role="dialog" aria-modal="true">
+    <div className={`recipe-view-sheet ${open ? 'recipe-view-sheet--open' : ''}`} aria-hidden={!open}>
+      <button type="button" className={`recipe-view-sheet__backdrop ${open ? 'recipe-view-sheet__backdrop--open' : ''}`} onClick={onClose} />
+      <section className={`recipe-view-sheet__panel ${open ? 'recipe-view-sheet__panel--open' : ''}`} role="dialog" aria-modal="true">
         <div className="recipe-view-sheet__handle" aria-hidden />
         <h2>Recipe</h2>
         <article className="recipe-view-sheet__card">
