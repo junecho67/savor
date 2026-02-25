@@ -1,0 +1,8 @@
+.grow-leaf-success { position: fixed; inset: 0; z-index: 130; display: flex; align-items: center; justify-content: center; }
+.grow-leaf-success__backdrop { position: absolute; inset: 0; border: 0; background: rgba(0, 0, 0, 0.58); }
+.grow-leaf-success__card { position: relative; width: 372px; border-radius: 20px; background: #fff; padding: 42px 20px 20px; display: flex; flex-direction: column; gap: 10px; }
+.grow-leaf-success__close { position: absolute; top: 12px; right: 12px; border: 0; background: transparent; font-size: 22px; color: #6e6049; }
+.grow-leaf-success__card h2 { margin: 0; text-align: center; font-size: 18px; font-weight: 700; }
+.grow-leaf-success__leaf-wrap { display: flex; justify-content: center; padding: 26px 0; }
+.grow-leaf-success__leaf { width: 216px; height: 180px; object-fit: cover; }
+.grow-leaf-success__cta { width: 100%; height: 32px; border: 0; border-radius: 10px; background: #6b885b; color: #fff; font-size: 14px; font-weight: 700; }

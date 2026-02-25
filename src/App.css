@@ -26,6 +26,23 @@ body {
   border-bottom: none;
 }
 
+.app-time-default {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 14px;
+  font-family: 'Inter', var(--font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  color: #1b1b28;
+}
+
+.app-time-default img {
+  width: 82px;
+  height: 15px;
+  object-fit: cover;
+}
+
 /* Main content */
 .app-main {
   padding: 16px 16px 16px;

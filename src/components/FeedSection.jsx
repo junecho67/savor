@@ -40,14 +40,14 @@ const FEED_ITEMS = [
   },
 ]
 
-function FeedSection() {
+function FeedSection({ onSelectRecipe, onOpenGrowLeaf }) {
   return (
     <section className="feed-section" aria-labelledby="feed-title">
       <h2 id="feed-title" className="feed-title">Your Family & Friends</h2>
       <ul className="feed-list">
         {FEED_ITEMS.map((item) => (
           <li key={item.id}>
-            <FeedItem {...item} />
+            <FeedItem {...item} onSelectRecipe={onSelectRecipe} onOpenGrowLeaf={onOpenGrowLeaf} />
           </li>
         ))}
       </ul>

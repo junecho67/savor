@@ -24,6 +24,7 @@
 .search-bar-icon img {
   width: 20px;
   height: 20px;
+  object-fit: contain;
 }
 
 .search-bar-input {
@@ -58,6 +59,7 @@
 .search-bar-mic img {
   width: 18px;
   height: 18px;
+  object-fit: contain;
 }
 
 .search-bar-mic:hover {

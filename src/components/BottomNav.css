@@ -60,6 +60,11 @@
 .bottom-nav-icon-image {
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 
@@ -71,6 +76,11 @@
 .bottom-nav-profile-image {
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  aspect-ratio: 1 / 1;
   border-radius: 34.2px;
   object-fit: cover;
 }

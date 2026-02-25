@@ -1,0 +1,58 @@
+.scan-capture {
+  position: relative;
+  width: 402px;
+  min-height: 788px;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+.scan-capture__file-input {
+  display: none;
+}
+
+.scan-capture__scan-button {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  transform: translateX(-50%);
+  width: 62px;
+  height: 62px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  z-index: 3;
+}
+
+.scan-capture__scan-button img {
+  width: 62px;
+  height: 62px;
+}
+.scan-capture {
+  position: relative;
+  width: 402px;
+  min-height: 788px;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+.scan-capture__file-input {
+  display: none;
+}
+
+.scan-capture__scan-button {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  transform: translateX(-50%);
+  width: 62px;
+  height: 62px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  z-index: 3;
+}
+
+.scan-capture__scan-button img {
+  width: 62px;
+  height: 62px;
+}

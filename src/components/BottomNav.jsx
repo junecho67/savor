@@ -45,7 +45,11 @@ function BottomNav({ activeId = 'home', onChange }) {
                   {id === 'profile' ? (
                     <img src={iconSrc} alt="" className="bottom-nav-profile-image" />
                   ) : (
-                    <img src={iconSrc} alt="" className={`bottom-nav-icon-image ${id === 'add' ? 'bottom-nav-icon-image--add' : ''}`} />
+                    <img
+                      src={iconSrc}
+                      alt=""
+                      className={`bottom-nav-icon-image ${id === 'add' ? 'bottom-nav-icon-image--add' : ''}`}
+                    />
                   )}
                 </span>
                 <span className="bottom-nav-label">{label}</span>

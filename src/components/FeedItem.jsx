@@ -4,11 +4,36 @@ const BRANCH_ICON = 'http://localhost:3845/assets/bca50743e960708810e3bbfafc580e
 const CHAT_ICON = 'http://localhost:3845/assets/b5f1ef92e6c9345b8327cf72f77557bdf21a5965.svg'
 const BOOKMARK_ICON = 'http://localhost:3845/assets/6706e034eb4cd22bf16fc919ef81e69d672589c5.svg'
 
-function FeedItem({ avatar, actor, verb, title, time, image, images, likes, comments }) {
+function FeedItem({ id, avatar, actor, verb, title, time, image, images, likes, comments, onSelectRecipe, onOpenGrowLeaf }) {
   const isMulti = Array.isArray(images) && images.length > 0
+  const isRecipeEntry = actor === 'Cho family' && verb === 'made' && title === 'chicken curry'
+
+  const handleOpenRecipe = () => {
+    if (isRecipeEntry && onSelectRecipe) onSelectRecipe(id)
+  }
+
+  const handleKeyDown = (event) => {
+    if (!isRecipeEntry) return
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      handleOpenRecipe()
+    }
+  }
+
+  const handleGrowLeafClick = (event) => {
+    event.stopPropagation()
+    if (isRecipeEntry && likes === 6 && onOpenGrowLeaf) onOpenGrowLeaf()
+  }
 
   return (
-    <article className="feed-item">
+    <article
+      className={`feed-item ${isRecipeEntry ? 'feed-item--clickable' : ''}`}
+      role={isRecipeEntry ? 'button' : undefined}
+      tabIndex={isRecipeEntry ? 0 : undefined}
+      onClick={isRecipeEntry ? handleOpenRecipe : undefined}
+      onKeyDown={isRecipeEntry ? handleKeyDown : undefined}
+      aria-label={isRecipeEntry ? 'Open Cho Family chicken curry recipe' : undefined}
+    >
       <div className="feed-item-header">
         <img src={avatar} alt="" className="feed-item-avatar" />
         <div className="feed-item-meta">
@@ -30,13 +55,18 @@ function FeedItem({ avatar, actor, verb, title, time, image, images, likes, comm
         )}
       </div>
       <div className="feed-item-actions">
-        <span className="feed-item-stat">
+        <button
+          type="button"
+          className="feed-item-stat feed-item-stat--button"
+          aria-label={isRecipeEntry && likes === 6 ? 'Grow a leaf' : undefined}
+          onClick={handleGrowLeafClick}
+        >
           <img src={BRANCH_ICON} alt="" /> {likes}
-        </span>
+        </button>
         <span className="feed-item-stat">
           <img src={CHAT_ICON} alt="" /> {comments}
         </span>
-        <button type="button" className="feed-item-bookmark" aria-label="Save">
+        <button type="button" className="feed-item-bookmark" aria-label="Save" onClick={(e) => e.stopPropagation()}>
           <img src={BOOKMARK_ICON} alt="" />
         </button>
       </div>
