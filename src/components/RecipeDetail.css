@@ -71,6 +71,9 @@
 }
 
 .recipe-detail__tree-post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px 0;
 }
 
@@ -117,7 +120,7 @@
 }
 
 .recipe-detail__tree-post-image-wrap {
-  margin-top: 8px;
+  margin-top: 0;
   padding: 0 20px;
 }
 
@@ -130,7 +133,7 @@
 }
 
 .recipe-detail__tree-post-body {
-  margin: 8px 0 0;
+  margin: 0;
   padding: 0 20px;
   font-family: 'Plus Jakarta Sans', var(--font-sans);
   font-size: 14px;
