@@ -1,15 +1,31 @@
 import './ForestPage.css'
 
-const TREE_MAP_IMAGE = '/Users/ycho05/.cursor/projects/Users-ycho05-Desktop-savorlanding/assets/Savor_Tree_Map_1-a5c353a4-de9a-448f-bf60-344884c3653c.png'
+const STATUS_RIGHT = 'http://localhost:3845/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
+const TREE_MAP_IMAGE = 'http://localhost:3845/assets/395e5e9985dddc6e46ea2d38f862fbe261baf4ce.png'
 const LEAF_ICON = 'http://localhost:3845/assets/af8a7865bebc8aa54be0cce5f05ada34f90d3b47.png'
 
 const TREE_SECTIONS = [
   {
     title: 'Chicken Curry',
     members: [
-      { name: 'Grandma', avatar: 'https://images.unsplash.com/photo-1521566652839-697aa473761a?q=80&w=100&auto=format&fit=crop' },
-      { name: 'Mom', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop' },
-      { name: 'Cousin Ian', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop' },
+      { name: 'Grandma', avatar: 'http://localhost:3845/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png' },
+      { name: 'Mom', avatar: 'http://localhost:3845/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png' },
+      { name: 'Cousin Ian', avatar: 'http://localhost:3845/assets/ccfa7cb9160116512a83c2308aa9c3ee27295503.png' },
+      { name: 'Aunt Sue', avatar: 'http://localhost:3845/assets/074c7df340e0721903d926425a6a68fdb7f3aff2.png' },
+    ],
+  },
+  {
+    title: 'Stir Fry Pork Belly',
+    members: [
+      { name: 'Grandma', avatar: 'http://localhost:3845/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png' },
+    ],
+  },
+  {
+    title: 'Kimchi jjigae',
+    members: [
+      { name: 'Mom', avatar: 'http://localhost:3845/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png' },
+      { name: 'Dad', avatar: 'http://localhost:3845/assets/baa1cbcbe2250c59af27a3ee93eec66927ac19e8.png' },
+      { name: 'Uncle Jon', avatar: 'http://localhost:3845/assets/67d36e696ad280668c5589c67828f07cb4611be0.png' },
     ],
   },
 ]
@@ -19,7 +35,7 @@ function ForestPage() {
     <section className="forest-page" aria-label="Forest page">
       <div className="forest-page__status">
         <span>10:00 AM</span>
-        <span className="forest-page__status-dots" aria-hidden><span /><span /><span /></span>
+        <img src={STATUS_RIGHT} alt="" />
       </div>
       <div className="forest-page__map-wrap">
         <img src={TREE_MAP_IMAGE} alt="Savor Tree Map" className="forest-page__map" />

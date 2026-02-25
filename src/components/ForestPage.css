@@ -1,79 +1,103 @@
 .forest-page {
   width: 402px;
   min-height: 788px;
-  background: #fff;
+  background: #f3f0eb;
 }
 
 .forest-page__status {
   padding: 18px 14px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: 'Inter', var(--font-sans);
   font-size: 17px;
   font-weight: 600;
   color: #1b1b28;
 }
 
-.forest-page__status-dots {
-  display: inline-flex;
-  gap: 4px;
-  align-items: center;
-}
-
-.forest-page__status-dots span {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #1b1b28;
+.forest-page__status img {
+  width: 82px;
+  height: 15px;
+  object-fit: cover;
 }
 
 .forest-page__map-wrap {
-  height: 320px;
-  overflow: hidden;
+  height: 249px;
+  width: 362px;
+  margin: 41px auto 0;
+  overflow: visible;
 }
 
 .forest-page__map {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .forest-page__sheet {
-  margin-top: 8px;
+  margin-top: 41px;
   border-radius: 20px 20px 0 0;
   background: #fff;
-  padding: 16px;
+  padding: 17px 20px 37px;
+  min-height: 486px;
 }
 
 .forest-page__title {
-  margin: 0 0 12px;
+  margin: 0 0 20px;
   font-family: 'Public Sans', var(--font-sans);
   font-size: 18px;
   font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.forest-page__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forest-page__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .forest-page__section-title {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 .forest-page__section-title img {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 20px;
+}
+
+.forest-page__section-title p {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', var(--font-sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-text);
 }
 
 .forest-page__members {
-  margin-top: 10px;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .forest-page__member-card {
+  width: 83px;
+  border-radius: 6px;
+  background: #f3f0eb;
+  padding: 4px 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
 }
 
 .forest-page__member-avatar {
@@ -85,5 +109,8 @@
 
 .forest-page__member-card p {
   margin: 0;
-  font-size: 12px;
+  font-family: 'Plus Jakarta Sans', var(--font-sans);
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--color-text);
 }

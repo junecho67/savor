@@ -37,8 +37,6 @@ function GrowLeafSheet({ open, onClose, onUpload }) {
     selectedPhotosRef.current.forEach((photo) => URL.revokeObjectURL(photo.previewUrl))
   }, [])
 
-  if (!open) return null
-
   const handleOpenPhotoPicker = () => setIsPhotoSourceOpen(true)
   const handleChooseLibrary = () => { setIsPhotoSourceOpen(false); libraryInputRef.current?.click() }
   const handleChooseCamera = () => { setIsPhotoSourceOpen(false); cameraInputRef.current?.click() }
@@ -63,9 +61,9 @@ function GrowLeafSheet({ open, onClose, onUpload }) {
   }
 
   return (
-    <div className="grow-leaf-sheet" aria-hidden={!open}>
-      <button type="button" className="grow-leaf-sheet__backdrop" aria-label="Close" onClick={onClose} />
-      <section className="grow-leaf-sheet__panel" role="dialog" aria-modal="true" aria-label="Grow a leaf">
+    <div className={`grow-leaf-sheet ${open ? 'grow-leaf-sheet--open' : ''}`} aria-hidden={!open}>
+      <button type="button" className={`grow-leaf-sheet__backdrop ${open ? 'grow-leaf-sheet__backdrop--open' : ''}`} aria-label="Close" onClick={onClose} />
+      <section className={`grow-leaf-sheet__panel ${open ? 'grow-leaf-sheet__panel--open' : ''}`} role="dialog" aria-modal="true" aria-label="Grow a leaf">
         <div className="grow-leaf-sheet__handle" aria-hidden />
         <h2>Grow a leaf</h2>
         <label className="grow-leaf-sheet__group">
@@ -91,7 +89,7 @@ function GrowLeafSheet({ open, onClose, onUpload }) {
         </label>
         <button type="button" className="grow-leaf-sheet__upload-button" onClick={onUpload}>Upload</button>
       </section>
-      {isPhotoSourceOpen && (
+      {open && isPhotoSourceOpen && (
         <div className="grow-leaf-sheet__source-sheet-wrap" role="dialog" aria-modal="true" aria-label="Choose photo source">
           <button type="button" className="grow-leaf-sheet__source-backdrop" onClick={() => setIsPhotoSourceOpen(false)} />
           <div className="grow-leaf-sheet__source-sheet">
