@@ -1,7 +1,8 @@
 # Savor
-**Bridging Generational Gaps**
 
-This is a functional **React prototype** developed to pressure-test the interaction logic and system-level behaviors of *Savor*, an intergenerational recipe-sharing app originally designed during the **Rice Design-a-thon 2026**.
+This is a functional React prototype of Savor, originally designed during the Rice Design-a-thon 2026, with the theme of briding generational gaps. I rebuilt this project in code to experiment with AI workflows and learn how design decisions translate into real interaction logic.
+
+
 
 ## 🚀 Goals
 The goal of this technical iteration was to move beyond static Figma mockups and explore AI-enabled workflows in a functional environment. More specifically, this project was an opportunity to learn and experiment with Cursor and AI-native development tools, while understanding how design decisions translate into working interaction logic.
