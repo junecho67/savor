@@ -11,7 +11,10 @@ The goal of this technical iteration was to move beyond static Figma mockups and
 * **Editor:** [Cursor](https://cursor.sh/) (AI-Native IDE)
 * **Design-to-Code Context:** Figma MCP (Model Context Protocol)
 
-## 🔍 What I Explored...
-*-Refined motion and transitions: Tested slide-up panels and screen transitions to make sure navigation felt smooth and intentional rather than abrupt or confusing.
-*-Prototyped real system flows: Simulated native device behaviors (like photo library permissions) and added real-time typing states.
-*-Closed the design-to-code gap: Used Cursor and Figma MCP to translate interaction ideas into working logic, spotting where designs needed to be simplified or adjusted for implementation.
+## 🔍 What I Explored
+
+- **Refined motion and transitions:** Tested slide-up panels and screen transitions to make sure navigation felt smooth and intentional rather than abrupt or confusing.
+
+- **Prototyped real system flows:** Simulated native device behaviors (like photo library permissions) and added real-time typing states.
+
+- **Closed the design-to-code gap:** Used Cursor and Figma MCP to translate interaction ideas into working logic, spotting where designs needed to be simplified or adjusted for implementation.
