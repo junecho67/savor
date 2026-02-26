@@ -18,7 +18,10 @@
 .add-recipe__status img {
   width: 82px;
   height: 15px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  flex-shrink: 0;
 }
 
 .add-recipe__header {

@@ -1,6 +1,6 @@
 import './AddRecipe.css'
 
-const imgStatus = '/savor/Group.svg'
+const imgStatus = '/savor/wifi top right.png?v=3'
 
 const iconScan = '/savor/famicons_scan.svg'
 const iconVoice = '/savor/Microphone.svg'

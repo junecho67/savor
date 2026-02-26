@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './ProfilePage.css'
 
-const imgStatus = '/savor/Group.svg'
+const imgStatus = '/savor/wifi top right.png?v=3'
 const imgShare = '/savor/Frame 70.svg'
 const imgSettings = '/savor/notification.svg'
 const imgArrowDown = '/savor/Frame 70.svg'

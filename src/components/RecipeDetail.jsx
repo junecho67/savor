@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './RecipeDetail.css'
 
-const STATUS_IMAGE = '/savor/Group.svg'
+const STATUS_IMAGE = '/savor/wifi top right.png?v=3'
 const BACK_ICON = '/savor/Frame 70.svg'
 const SHARE_ICON = '/savor/addrecipe.svg'
 const HERO_IMAGE = '/savor/chofamilymadechickencurry.png'

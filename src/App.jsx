@@ -15,7 +15,7 @@ import GrowLeafSheet from './components/GrowLeafSheet'
 import GrowLeafSuccessModal from './components/GrowLeafSuccessModal'
 import RecipeViewSheet from './components/RecipeViewSheet'
 
-const HOME_STATUS_IMAGE = '/savor/Group.svg'
+const HOME_STATUS_IMAGE = '/savor/wifi top right.png?v=3'
 
 function App() {
   const [activeTab, setActiveTab] = useState('home')

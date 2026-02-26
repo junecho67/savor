@@ -1,6 +1,6 @@
 import './ForestPage.css'
 
-const STATUS_RIGHT = '/savor/Group.svg'
+const STATUS_RIGHT = '/savor/wifi top right.png?v=3'
 const TREE_MAP_IMAGE = '/savor/Savor Tree Map 1.png'
 const LEAF_ICON = '/savor/SavorLeafIcon 2.png'
 

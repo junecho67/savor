@@ -1,6 +1,6 @@
 import './BottomNav.css'
 
-const imgFrame1 = '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png'
+const imgFrame1 = '/savor/images-2.jpeg'
 const imgHomeInactive = '/savor/home.svg'
 const imgHomeActive = '/savor/home.svg'
 const imgForestInactive = '/savor/forest.svg'
@@ -48,7 +48,7 @@ function BottomNav({ activeId = 'home', onChange }) {
                     <img
                       src={iconSrc}
                       alt=""
-                      className={`bottom-nav-icon-image ${id === 'add' ? 'bottom-nav-icon-image--add' : ''}`}
+                      className={`bottom-nav-icon-image ${id === 'add' ? 'bottom-nav-icon-image--add' : ''} ${isActive ? 'is-active' : ''}`}
                     />
                   )}
                 </span>

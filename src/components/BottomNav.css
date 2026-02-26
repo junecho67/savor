@@ -66,6 +66,7 @@
   max-height: 24px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  transition: filter 0.15s ease;
 }
 
 .bottom-nav-icon-image--add {
@@ -83,6 +84,11 @@
   aspect-ratio: 1 / 1;
   border-radius: 34.2px;
   object-fit: cover;
+  transition: none;
+}
+
+.bottom-nav-icon-image.is-active {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(29%) saturate(1263%) hue-rotate(330deg) brightness(94%) contrast(90%);
 }
 
 .bottom-nav-label {

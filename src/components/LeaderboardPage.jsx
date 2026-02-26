@@ -1,6 +1,6 @@
 import './LeaderboardPage.css'
 
-const STATUS_RIGHT = '/savor/Group.svg'
+const STATUS_RIGHT = '/savor/wifi top right.png?v=3'
 const BADGE_1 = '/savor/SavorLeaderboardBadges-07 1.png'
 const BADGE_2 = '/savor/SavorLeaderboardBadges-06 1.png'
 const BADGE_3 = '/savor/SavorLeaderboardBadges-06 1.png'
