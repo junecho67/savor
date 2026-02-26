@@ -1,7 +1,6 @@
 # Savor
 
-This is a functional React prototype of Savor, originally designed during the Rice Design-a-thon 2026, with the theme of briding generational gaps. I rebuilt this project in code to experiment with AI workflows and learn how design decisions translate into real interaction logic.
-
+This is a functional React prototype of Savor, originally designed during the Rice Design-a-thon 2026, with the theme of bridging generational gaps. Savor allows families to share and preserve recipes while growing a digital family tree, where each contribution expands a shared forest of memories and traditions.
 
 
 ## 🚀 Goals
