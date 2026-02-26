@@ -1,14 +1,14 @@
 import './BottomNav.css'
 
-const imgFrame1 = 'http://localhost:3845/assets/9bf4d2684383732136e64955c3a44ff54bcea562.png'
-const imgHomeInactive = 'http://localhost:3845/assets/b26b4fbdbf1e8ae5e34033bd7a83efc283d13912.svg'
-const imgHomeActive = 'http://localhost:3845/assets/1651393406fd7c687e7b1e39bd1e2b7aff26d8c2.svg'
-const imgForestInactive = 'http://localhost:3845/assets/697f47aa338ced0fb3e5886acc90e4ac32d73347.svg'
-const imgForestActive = 'http://localhost:3845/assets/7791474b1a383e7f5d50d3b75a3d74b6e9eaece2.svg'
-const imgAddInactive = 'http://localhost:3845/assets/b6475a8bcf006fe19ba5adf9d1736cf1f3e77fd3.svg'
-const imgAddActive = 'http://localhost:3845/assets/4bc0d3219ded2c5cec0ba7d6ef7be3d2aea53c27.svg'
-const imgLeaderboardInactive = 'http://localhost:3845/assets/26c10728bbe40819a74127d360e3f57e9c1f0760.svg'
-const imgLeaderboardActive = 'http://localhost:3845/assets/27cb00a8741221d6e94281ee30b5db306989d671.svg'
+const imgFrame1 = '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png'
+const imgHomeInactive = '/savor/home.svg'
+const imgHomeActive = '/savor/home.svg'
+const imgForestInactive = '/savor/forest.svg'
+const imgForestActive = '/savor/forest.svg'
+const imgAddInactive = '/savor/addrecipe.svg'
+const imgAddActive = '/savor/addrecipe.svg'
+const imgLeaderboardInactive = '/savor/leaderboard.svg'
+const imgLeaderboardActive = '/savor/leaderboard.svg'
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Home' },

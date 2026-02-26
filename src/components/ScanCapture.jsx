@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import './ScanCapture.css'
 
-const SCAN_BUTTON = 'http://localhost:3845/assets/aaf0fc9e437284e21758657bb05bd7871878f50f.svg'
+const SCAN_BUTTON = '/savor/famicons_scan.svg'
 
 function ScanCapture() {
   const fileInputRef = useRef(null)

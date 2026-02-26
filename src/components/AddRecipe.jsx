@@ -1,15 +1,15 @@
 import './AddRecipe.css'
 
-const imgStatus = 'http://localhost:3845/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
+const imgStatus = '/savor/Group.svg'
 
-const iconScan = 'http://localhost:3845/assets/4d8b3837cf81f54456865657161739511ea565fd.svg'
-const iconVoice = 'http://localhost:3845/assets/62a6b9897051fc6a96d2f5efb9194dc90c4f8b2b.svg'
-const iconCopy = 'http://localhost:3845/assets/62362911ba9de6cb5a140b45256f0801c1686a56.svg'
-const iconNotes = 'http://localhost:3845/assets/9f5183a050cd5ee60ef70fffdeca2549d65ec64c.svg'
-const iconMusic = 'http://localhost:3845/assets/0440d3800a39081200da669c4a77767391837d0e.svg'
+const iconScan = '/savor/famicons_scan.svg'
+const iconVoice = '/savor/Microphone.svg'
+const iconCopy = '/savor/addrecipe.svg'
+const iconNotes = '/savor/Frame 70.svg'
+const iconMusic = '/savor/savoronboardingicons-12 1.png'
 
-const archive1 = 'http://localhost:3845/assets/05fb808e337b5b999f903ddd9beb5f9a41a198ce.png'
-const archive3 = 'http://localhost:3845/assets/bb16a8cf96d38d1f7969c30465b7aa1f6ed6de58.png'
+const archive1 = '/savor/Image Full-Width-1.png'
+const archive3 = '/savor/Image Full-Width-2.png'
 
 function AddRecipe({ onOpenScan }) {
   return (

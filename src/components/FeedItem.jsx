@@ -1,8 +1,8 @@
 import './FeedItem.css'
 
-const BRANCH_ICON = 'http://localhost:3845/assets/bca50743e960708810e3bbfafc580ee3181f5c27.svg'
-const CHAT_ICON = 'http://localhost:3845/assets/b5f1ef92e6c9345b8327cf72f77557bdf21a5965.svg'
-const BOOKMARK_ICON = 'http://localhost:3845/assets/6706e034eb4cd22bf16fc919ef81e69d672589c5.svg'
+const BRANCH_ICON = '/savor/leaf.svg'
+const CHAT_ICON = '/savor/comment.svg'
+const BOOKMARK_ICON = '/savor/save.svg'
 
 function FeedItem({ id, avatar, actor, verb, title, time, image, images, likes, comments, onSelectRecipe, onOpenGrowLeaf }) {
   const isMulti = Array.isArray(images) && images.length > 0

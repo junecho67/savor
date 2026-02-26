@@ -1,9 +1,9 @@
 import './LeaderboardPage.css'
 
-const STATUS_RIGHT = 'http://localhost:3845/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
-const BADGE_1 = 'http://localhost:3845/assets/3184e1f5da33cb3aac6a26a49767a7724ef251f3.png'
-const BADGE_2 = 'http://localhost:3845/assets/8a0cb94f5d8a268ed563597ac2681faf2db36fd3.png'
-const BADGE_3 = 'http://localhost:3845/assets/e3b903f817b588cf1e6bf1783b0531c0774260c1.png'
+const STATUS_RIGHT = '/savor/Group.svg'
+const BADGE_1 = '/savor/SavorLeaderboardBadges-07 1.png'
+const BADGE_2 = '/savor/SavorLeaderboardBadges-06 1.png'
+const BADGE_3 = '/savor/SavorLeaderboardBadges-06 1.png'
 
 const TOP_THREE = [
   { rank: 1, family: 'Jang Family', trees: 52, badge: BADGE_1, cardClass: 'leaderboard-page__podium-card--first' },

@@ -1,31 +1,31 @@
 import './ForestPage.css'
 
-const STATUS_RIGHT = 'http://localhost:3845/assets/ba55cde1b25994eb9a947a7394465675848160fe.png'
-const TREE_MAP_IMAGE = 'http://localhost:3845/assets/395e5e9985dddc6e46ea2d38f862fbe261baf4ce.png'
-const LEAF_ICON = 'http://localhost:3845/assets/af8a7865bebc8aa54be0cce5f05ada34f90d3b47.png'
+const STATUS_RIGHT = '/savor/Group.svg'
+const TREE_MAP_IMAGE = '/savor/Savor Tree Map 1.png'
+const LEAF_ICON = '/savor/SavorLeafIcon 2.png'
 
 const TREE_SECTIONS = [
   {
     title: 'Chicken Curry',
     members: [
-      { name: 'Grandma', avatar: 'http://localhost:3845/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png' },
-      { name: 'Mom', avatar: 'http://localhost:3845/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png' },
-      { name: 'Cousin Ian', avatar: 'http://localhost:3845/assets/ccfa7cb9160116512a83c2308aa9c3ee27295503.png' },
-      { name: 'Aunt Sue', avatar: 'http://localhost:3845/assets/074c7df340e0721903d926425a6a68fdb7f3aff2.png' },
+      { name: 'Grandma', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Mom', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Cousin Ian', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Aunt Sue', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
     ],
   },
   {
     title: 'Stir Fry Pork Belly',
     members: [
-      { name: 'Grandma', avatar: 'http://localhost:3845/assets/b6beaffbf80d98602c1e345bb8e77d18fa1c8530.png' },
+      { name: 'Grandma', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
     ],
   },
   {
     title: 'Kimchi jjigae',
     members: [
-      { name: 'Mom', avatar: 'http://localhost:3845/assets/de328d1d26cc9e14ceba885a5e9d25cc84861523.png' },
-      { name: 'Dad', avatar: 'http://localhost:3845/assets/baa1cbcbe2250c59af27a3ee93eec66927ac19e8.png' },
-      { name: 'Uncle Jon', avatar: 'http://localhost:3845/assets/67d36e696ad280668c5589c67828f07cb4611be0.png' },
+      { name: 'Mom', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Dad', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Uncle Jon', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
     ],
   },
 ]

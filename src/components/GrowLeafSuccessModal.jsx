@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './GrowLeafSuccessModal.css'
 
-const LEAF_IMAGE = 'http://localhost:3845/assets/af8a7865bebc8aa54be0cce5f05ada34f90d3b47.png'
+const LEAF_IMAGE = '/savor/SavorLeafIcon 2.png'
 
 function GrowLeafSuccessModal({ open, onClose, onViewForest }) {
   useEffect(() => {

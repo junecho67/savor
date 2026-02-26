@@ -1,7 +1,7 @@
 import './SearchBar.css'
 
-const SEARCH_ICON = 'http://localhost:3845/assets/de66a21ef8862ea235ee5b85b7a442f82e72a24d.svg'
-const MIC_ICON = 'http://localhost:3845/assets/f081b2aae6d5cad56960fbab7de31ddb971e6c68.svg'
+const SEARCH_ICON = '/savor/Frame 70.svg'
+const MIC_ICON = '/savor/Microphone.svg'
 
 function SearchBar() {
   return (
