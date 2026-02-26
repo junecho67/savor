@@ -1,7 +1,7 @@
 import './SearchBar.css'
 
-const SEARCH_ICON = '/savor/Frame 70.svg'
-const MIC_ICON = '/savor/Microphone.svg'
+const SEARCH_ICON = '/savor/search.svg'
+const MIC_ICON = '/savor/mic.svg'
 
 function SearchBar() {
   return (

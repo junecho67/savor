@@ -21,15 +21,15 @@ const FEED_ITEMS = [
     title: 'butter pasta',
     time: '1 day ago',
     images: [
-      '/savor/butter.png',
       '/savor/butterpasta.png',
+      '/savor/butter.png',
     ],
     likes: 6,
     comments: 3,
   },
   {
     id: '3',
-    avatar: '/savor/sarah.png',
+    avatar: '/savor/jangfamily.png',
     actor: 'Jang family',
     verb: 'baked an',
     title: 'apple pie',

@@ -1,6 +1,6 @@
 import './ChallengeSection.css'
 
-const CHALLENGE_IMAGE = '/savor/chickencurry.jpg'
+const CHALLENGE_IMAGE = '/savor/challenge.png'
 
 function ChallengeSection() {
   return (
