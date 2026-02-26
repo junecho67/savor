@@ -4,11 +4,10 @@ const imgStatus = '/savor/wifi top right.png?v=3'
 
 const iconScan = '/savor/famicons_scan.svg'
 const iconVoice = '/savor/Microphone.svg'
-const iconCopy = '/savor/addrecipe.svg'
+const iconCopy = '/savor/Group.svg'
 const iconNotes = '/savor/Frame 70.svg'
-const iconMusic = '/savor/savoronboardingicons-12 1.png'
-
-const archive1 = '/savor/Image Full-Width-1.png'
+const archive1 = '/savor/Image Full-Width.png'
+const archive2 = '/savor/Image Full-Width-1.png'
 const archive3 = '/savor/Image Full-Width-2.png'
 
 function AddRecipe({ onOpenScan }) {
@@ -54,9 +53,7 @@ function AddRecipe({ onOpenScan }) {
           <p>View your past images, voice memos and more.</p>
           <div className="add-recipe__archive-row">
             <img src={archive1} alt="" className="add-recipe__archive-img" />
-            <div className="add-recipe__archive-audio" aria-hidden>
-              <img src={iconMusic} alt="" />
-            </div>
+            <img src={archive2} alt="" className="add-recipe__archive-img" />
             <img src={archive3} alt="" className="add-recipe__archive-img" />
           </div>
         </article>

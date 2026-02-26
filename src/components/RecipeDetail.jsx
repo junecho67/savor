@@ -2,16 +2,16 @@ import { useState } from 'react'
 import './RecipeDetail.css'
 
 const STATUS_IMAGE = '/savor/wifi top right.png?v=3'
-const BACK_ICON = '/savor/Frame 70.svg'
-const SHARE_ICON = '/savor/addrecipe.svg'
-const HERO_IMAGE = '/savor/chofamilymadechickencurry.png'
-const AUTHOR_AVATAR = '/savor/mom.png'
+const BACK_ICON = '/savor/carotback.svg'
+const SHARE_ICON = '/savor/share.svg'
+const HERO_IMAGE = '/savor/cho curry.jpg'
+const AUTHOR_AVATAR = '/savor/chofamilymadechickencurry.png'
 const BRANCH_ICON = '/savor/leaf.svg'
 const CHAT_ICON = '/savor/comment.svg'
 const BOOKMARK_ICON = '/savor/save.svg'
-const OTHER_TREES_POST_IMAGE_1 = '/savor/momfromhongfamily.png'
-const OTHER_TREES_POST_IMAGE_2 = '/savor/sarah.png'
-const MY_TREES_POST_IMAGE = '/savor/Home_cooked_Chicken_Curry.jpg'
+const OTHER_TREES_POST_IMAGE_1 = '/savor/momfromhongfood.png'
+const OTHER_TREES_POST_IMAGE_2 = '/savor/sarahfood.png'
+const MY_TREES_POST_IMAGE = '/savor/mytree_mom_post.png'
 
 const POSTS_BY_TAB = {
   my: [

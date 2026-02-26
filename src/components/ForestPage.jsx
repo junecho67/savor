@@ -8,24 +8,24 @@ const TREE_SECTIONS = [
   {
     title: 'Chicken Curry',
     members: [
-      { name: 'Grandma', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
-      { name: 'Mom', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
-      { name: 'Cousin Ian', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
-      { name: 'Aunt Sue', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Grandma', avatar: '/savor/grandma.png' },
+      { name: 'Mom', avatar: '/savor/mom.png' },
+      { name: 'Cousin Ian', avatar: '/savor/cousinian.png' },
+      { name: 'Aunt Sue', avatar: '/savor/auntclara.png' },
     ],
   },
   {
     title: 'Stir Fry Pork Belly',
     members: [
-      { name: 'Grandma', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Grandma', avatar: '/savor/grandma.png' },
     ],
   },
   {
     title: 'Kimchi jjigae',
     members: [
-      { name: 'Mom', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
-      { name: 'Dad', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
-      { name: 'Uncle Jon', avatar: '/savor/D2150FEF-1736-494A-8776-6A41D1BE0202.png' },
+      { name: 'Mom', avatar: '/savor/mom.png' },
+      { name: 'Dad', avatar: '/savor/dad.png' },
+      { name: 'Uncle Jon', avatar: '/savor/unclejon.png' },
     ],
   },
 ]

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './GrowLeafSheet.css'
 
-const CAMERA_ICON = '/savor/famicons_scan.svg'
+const CAMERA_ICON = '/savor/camera.svg'
 
 function GrowLeafSheet({ open, onClose, onUpload }) {
   const libraryInputRef = useRef(null)

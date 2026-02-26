@@ -7,6 +7,10 @@
 }
 
 .profile-page__status {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  background: #fff;
   padding: 18px 14px;
   font-size: 17px;
   font-family: 'Inter', var(--font-sans);

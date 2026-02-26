@@ -6,6 +6,10 @@
 }
 
 .leaderboard-page__status {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  background: #fff;
   padding: 18px 14px;
   display: flex;
   justify-content: space-between;
