@@ -37,13 +37,13 @@ function App() {
             <img src={HOME_STATUS_IMAGE} alt="" />
           </div>
           <Header />
-          <SearchBar />
         </header>
       )}
 
       <main className={`app-main ${activeTab !== 'home' ? 'app-main--profile' : ''}`}>
         {activeTab === 'home' && selectedRecipeId == null && (
           <>
+            <SearchBar />
             <ChallengeSection />
             <FeedSection
               onSelectRecipe={setSelectedRecipeId}

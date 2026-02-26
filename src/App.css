@@ -51,6 +51,10 @@ body {
   padding: 16px 16px 16px;
 }
 
+.app-main .search-bar {
+  margin: 0 0 16px;
+}
+
 .app-main--profile {
   padding: 0;
 }
